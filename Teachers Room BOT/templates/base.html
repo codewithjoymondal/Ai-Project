@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <title>Ai Project</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">BOT_SENSEI</a>         
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">HI!</span>
+                <span class="down">We Are WUB Student</span>
+            </h1>
+            <p class="header-subtitle">Ai Project</p>            
+
+            <button class="btn btn-primary">Visit My Works</button>
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="authors">
+
+        <h1 class="title">Our Team</h1>
+     
+        <div class="box-container">
+     
+           <div class="box">
+              <img src="static/images/JOYMONDAL.jpg" alt="Joy MOndal">
+              <div class="share">
+                 <a href="https://www.facebook.com/joymondalcse/" class="fab fa-facebook-f"></a>
+                 <a href="https://www.instagram.com/codewithjoymondal/" class="fab fa-instagram"></a>
+                 <a href="https://www.linkedin.com/in/codewithjoymondal/" class="fab fa-linkedin"></a>
+                 <a href="#" class="fab fa-twitter"></a>
+              </div>
+              <h3>Joy Mondal</h3>
+              <h4><b>Designation : Project And Assignment</b></h4>
+              <h4>Computer Science Engineer <br>
+                 World University Of Bangladesh</h4>
+           </div>
+     
+           <div class="box">
+              <img src="static/images/Rahma.jpg" alt="Rahma">
+              <div class="share">
+                 <a href="https://www.facebook.com/rahmaalamsamiha" class="fab fa-facebook-f"></a>
+                 <a href="#" class="fab fa-twitter"></a>
+                 <a href="#" class="fab fa-instagram"></a>
+                 <a href="#" class="fab fa-linkedin"></a>
+              </div>
+              <h3>Rahma Alam</h3>
+              <h4><b>Designation : Presentation</b></h4>
+              <h4>Computer Science Engineer <br>
+                 World University Of Bangladesh</h4>
+           </div>
+     
+        </div>
+     </section>
+<section>
+    <div class="full">
+    </div>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="{{ url_for('static', filename='images/teacher.png') }}" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">SENSEI Chat Bot</h4>
+                        <p class="chatbox__description--header">Hello , Student, How can I help you?</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div></div>
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" placeholder="Write a message...">
+                    <button class="chatbox__send--footer send__button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    
+        <script>
+            $SCRIPT_ROOT = {{ request.script_root|tojson }};
+        </script>
+        <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+	
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+	<script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+    <script src="assets/js/joy.js"></script>
+
+</body>
+</html>

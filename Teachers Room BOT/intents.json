@@ -1,0 +1,90 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "Is anyone there?",
+        "Hello"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye","ok bye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "GoodMorning",
+      "patterns": ["GoodMorning", "Good Monrning", "good monrning","Morning","morning"],
+      "responses": [
+        "Good Morning Dear!",
+        "Good Morning!"
+      ]
+    },
+    {
+      "tag": "GoodAfternoon",
+      "patterns": ["GoodAfternoon", "Good Afternoon","Good afternoon", "good afternoon","afternoon","Afternoon"],
+      "responses": [
+        "Good Afternoon Dear!",
+        "Good Afternoon!"
+      ]
+    },
+
+    {
+      "tag": "GoodEvening",
+      "patterns": ["GoodEvening", "Good Evening", "good evening","evening","evening"],
+      "responses": [
+        "Good Evening Dear!",
+        "Good Evening!"
+      ]
+    },
+
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "problem",
+      "patterns": ["I have some problem","I want to talk about a problem","I have problem","problem","I am facing problem"],
+      "responses": ["Yes, please say it.","Go ahead and say it."]
+          },
+    {
+      "tag": "help ",
+      "patterns": ["Help","help","Sir Help","I Need Help","Sir, I need help","I need help","I need some help"],
+      "responses": ["Yes! Sure,How can I help you?","Ofcourse, How can I help?"]
+    },
+     {
+      "tag": "Exam ",
+      "patterns": ["I want know about exam details "],
+      "responses": ["The Exam date is not declared yet. Please wait for the email confirmation."]
+    },
+        {
+      "tag": "topic",
+      "patterns": [""],
+      "responses": ["sure, what topic"]
+    },
+        {
+      "tag": "question1",
+      "patterns": ["Could you explain me what is game theory"],
+      "responses": ["Game theory is the study of mathematical models of strategic interactions among rational agents. \nIt has applications in all fields of social science,\nas well as in logic, systems science and computer science."]
+    },
+    {
+      "tag": "Talk",
+      "patterns": ["I want to meet directly", "Can I meet directly","I want to talk directly"],
+      "responses": ["Then please call in this number 01000000000 \nwithin office hours to make an appointment."]
+    }
+
+  ]
+}
